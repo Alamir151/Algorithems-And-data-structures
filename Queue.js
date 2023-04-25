@@ -2,7 +2,7 @@ class Queue{
     constructor(){
         this.items=[];
       
-        this.rear=0;
+       
         this.length=0;
     }
     enuque(item){
@@ -13,7 +13,7 @@ class Queue{
     dequeue(){
         if(this.length===0)return null;
         this.length--;
-        this.front++;
+        
         return this.items.shift();
     }
     peek(){
