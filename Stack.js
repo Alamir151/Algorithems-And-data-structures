@@ -1,12 +1,15 @@
 class Stack{
     constructor(){
         this.items = [];
+        this.length;
     }
     push(item){
         this.items.push(item);
+        this.length++;
     }
     pop(){
         if(this.items.length===0) return null;
+        this.length--;
         return this.items.pop();
     }
     isEmpty(){
@@ -14,7 +17,7 @@ class Stack{
     }
     peek(){
         if(this.items.length===0) return null;
-        return this.items[this.items.length - 1];
+        return this.items[0];
     }
     length(){
         return this.items.length;
