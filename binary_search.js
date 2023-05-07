@@ -13,7 +13,10 @@ function binarySearch(arr, target) {
             right = mid - 1;
         }
     }
-    return -1;
+    if (left >= nums.length || nums[left] !== target) {
+        return -1;
+    }
+    return left;
 
 }
 
